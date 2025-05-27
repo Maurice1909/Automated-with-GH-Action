@@ -22,23 +22,23 @@ variable "resource_group_name" {
 variable "location" {
   description = "The Azure region to deploy resources"
   type        = string
-  default     = "eastus"
+  default     = "uksouth"
 }
 
 variable "acr_name" {
   description = "The name of your Azure Container Registry"
   type        = string
-  default     = "youracrname" # IMPORTANT: Replace with your ACR name
+  default     = "acrcoffeeapp" 
 }
 
 variable "image_name" {
-  description = "The name of the Docker image in ACR (e.g., coffee-app)"
+  description = "The name of the Docker image in ACR"
   type        = string
-  default     = "coffee-app"
+  default     = "first_coffee"
 }
 
 variable "image_tag" {
-  description = "The tag of the Docker image (e.g., latest)"
+  description = "The tag of the Docker image"
   type        = string
   default     = "latest"
 }
